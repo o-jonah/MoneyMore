@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EconMoney</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+        <h1>Expense Splitter</h1>
+    </header>
+    <main>
+        <section id="expense-form">
+            <h2>Add Expense</h2>
+            <form id="expenseForm">
+                <label for="description">Description:</label>
+                <input type="text" id="description" required>
+                
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" step="0.01" required>
+                
+                <label for="people">People (comma separated):</label>
+                <input type="text" id="people" required>
+                
+                <button type="submit">Add Expense</button>
+            </form>
+        </section>
+        <section id="results">
+            <h2>Results</h2>
+            <ul id="resultsList"></ul>
+        </section>
+    </main>
+  
+
+  <script src="script.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+
+</body>
+</html>
